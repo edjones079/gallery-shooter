@@ -1,0 +1,59 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "Spritesheet",
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/Tiny Town.tmx": {
+            "scale": 4.4946875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80.09455607314189,
+                "y": 80.20579851213238
+            }
+        },
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/Tiny Town.tmx#tiny-town-packed": {
+            "scaleInDock": 1
+        },
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/gallery.tmx": {
+            "scale": 0.832734375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 372.8679988741908,
+                "y": 280.40153860587293
+            }
+        },
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/spritesheet_cars.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.externalTilesetPath": "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets",
+    "last.imagePath": "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/gallery-shooter/assets/Spritesheet",
+    "map.height": 25,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 40,
+    "openFiles": [
+    ],
+    "project": "gallery-shooter.tiled-project",
+    "recentFiles": [
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/gallery.tmx",
+        "/home/electrickazoo/Documents/Projects/JS_Programs/CMPM120/TopDownWorld_Emmett/assets/Tiny Town.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.spacing": 4,
+    "tileset.tileSize": {
+        "height": 24,
+        "width": 32
+    },
+    "tileset.useTransparentColor": true
+}

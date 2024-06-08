@@ -5,7 +5,7 @@ class oneD extends Phaser.Scene {
         super("oneD");
         this.my = {sprite: {}}; 
 
-        this.playerX = 400;
+        this.playerX = 700;
         this.playerY = 400;
         this.bulletTime = false;
     }
@@ -13,10 +13,17 @@ class oneD extends Phaser.Scene {
     preload(){
         // Assets from Kenny Assets pack "Shape Characters"
         // https://kenney.nl/assets/shape-characters
-        this.load.setPath("./assets/");
+        this.load.setPath("./assets/Cars");
+        this.load.image("player", "taxi.png");
+        this.load.image("enemy1", "scooter.png");
+        this.load.image("enemy2", "buggy.png");
+        this.load.image("enemy3", "truck.png");
 
-        this.load.image("player", "card_clubs_A.png");
+        this.load.setPath("./assets");
         this.load.image("bullet", "dice_small_1.png");
+
+        this.load.setPath("./assets");
+        this.load.audio("song", ["'Beat Mekanik - Swing Party.mp3'"]);
 
     }
 
@@ -28,14 +35,16 @@ class oneD extends Phaser.Scene {
         my.sprite.player = this.add.sprite(this.playerX, this.playerY, "player");
         //my.sprite.player.setCollideWorldBounds(true);
 
+        my.sprite.song = this.add.sprite
+
 
         // Create the two sprites, one for each type of smile
         my.sprite.bullet = this.add.sprite(this.bulletX, this.bulletY, "bullet");
 
         my.sprite.bullet.visible = false;
 
-        this.a_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
-        this.d_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+        this.w_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+        this.s_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
         this.space_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         
     }
@@ -55,17 +64,17 @@ class oneD extends Phaser.Scene {
 
         if (this.bulletTime)
         {
-            my.sprite.bullet.y -= 15;
+            my.sprite.bullet.x -= 15;
         }
 
-        if (this.a_key.isDown && my.sprite.player.x >= 20)
+        if (this.w_key.isDown && my.sprite.player.y >= 400)
         {
-            my.sprite.player.x -= 10;
+            my.sprite.player.y -= 10;
         }
 
-        if (this.d_key.isDown && my.sprite.player.x <= 780)
+        if (this.s_key.isDown && my.sprite.player.y <= 580)
         {
-            my.sprite.player.x += 10;
+            my.sprite.player.y += 10;
         }
 
         //d_key.on("down", event => {
